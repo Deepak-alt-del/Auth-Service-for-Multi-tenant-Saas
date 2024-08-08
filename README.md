@@ -17,7 +17,30 @@ To build and start the application using Docker Compose, run the following comma
 ```bash
 docker-compose up -d --build
 ```
-# Testing
+### Database Configuration
+In your Django project settings (settings.py), ensure to uncomment and select the appropriate database configuration under the # DB for docker section. Here’s an example snippet:
+
+```bash
+# settings.py
+
+# DB for docker
+
+DATABASES = {
+    "default": {
+    "ENGINE": "django.db.backends.postgresql",
+    "NAME": "postgres",
+    "USER": "postgres",
+    "PASSWORD": "postgres",
+    "HOST": "db", 
+    "PORT": 5432, 
+    }
+}
+
+```
+Adjust the database configuration (e.g., ENGINE, NAME, USER, PASSWORD, HOST, PORT) according to your Docker setup and database credentials.
+
+
+## Testing
 * Import the provided Postman collection (Auth_Service.postman_collection.json) into Postman for testing the APIs.
 * Ensure all scenarios (successful and error cases) are thoroughly tested.
 
