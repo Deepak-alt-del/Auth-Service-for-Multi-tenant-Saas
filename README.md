@@ -1,15 +1,15 @@
-#Auth Service for Multi-tenant SaaS
+# Auth Service for Multi-tenant SaaS
 
 
 This repository contains the backend implementation of an authentication service for a multi-tenant SaaS application. It includes APIs for user management, organization management, role management, and various statistics endpoints.
 
-###Technologies Used
+## Technologies Used
 Python Django Rest Framework
 PostgreSQL / SQLite (database)
 JWT (for authentication tokens)
 Resend (for Email API)
 
-###Docker Support
+## Docker Support
 This repository includes a Dockerfile and docker-compose.yml file for running the application in a containerized environment.
 
 Build and Run with Docker Compose
